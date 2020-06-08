@@ -9,3 +9,6 @@ Steps to install the project:
 4. Run `node server.js` to start the Front-end
 5. Run `python Server/server.py` to start the Back-end
 6. You should be able to view the application in the browser at `http://localhost:3000`
+
+## Heroku Deployment:
+The application has been deployed to Heroku. You can access it using the [url](https://myosa.herokuapp.com/)
