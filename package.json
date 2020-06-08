@@ -1,0 +1,15 @@
+{
+  "name": "osa",
+  "version": "1.0.0",
+  "description": "This project is for displaying OSA graphs",
+  "main": "app.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Kethan Dasari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}

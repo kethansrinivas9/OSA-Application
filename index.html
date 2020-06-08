@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="osa_app">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="canvasjs.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Optical Spectrum Analyzer</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li ng-class="{ active: isActive('/')}">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li ng-class="{ active: isActive('/query')}">
+            <a class="nav-link" href="#!query">Query</a>
+          </li>
+          <li ng-class="{ active: isActive('/logs')}">
+            <a class="nav-link" href="#!logs">Logs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main">
+      <div ng-view></div>
+    </div>
+  </body>
+</html>

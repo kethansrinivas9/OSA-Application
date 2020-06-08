@@ -1,0 +1,14 @@
+<br><br>
+<div ng-controller="queryController">
+  <div align = "center">
+      <h5 >Click Start/Single button to display the OSA graph</h5>
+      <br>
+      <button type="button" class="btn btn-primary" ng-click="startAcquisition()" ng-disabled="checked">Start</button>&nbsp;
+      <button type="button" class="btn btn-danger" ng-click="stopAcquisition()" ng-disabled="checked">Stop</button>&nbsp;
+      <button type="button" class="btn btn-success" ng-click="getSingle()" ng-disabled="isStarted">Single</button>
+      <br><br>
+      <div id="chartContainer" style="height: 400px; width: 90%;">
+      </div>
+  </div>
+</div>
+<div style="clear:both"></div>

@@ -1,0 +1,72 @@
+<br><br>
+<div style="width: 100%;" ng-controller="queryController">
+  <div align = "center" style="float:left; width: 60%">
+      <h4 >Enter the command to display the result</h4>
+      <br>
+      <input type="text" name="image_description" value="" style="width: 340px" ng-model="queryInput">
+      <button type="button" class="btn btn-primary" ng-click="getQueryResponse()">Search</button>
+      <br><br>
+      <div>
+        <textarea rows="15" cols="70" readonly ng-model="queryResponse"></textarea>
+      </div>
+  </div>
+  <div style="float:right;width: 40%">
+    <h4 align="center">List of Commands</h4>
+    <table class="table table-sm ">
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>cmd</td>
+          <td>returns command prompt</td>
+        </tr>
+        <tr>
+          <td>IDN</td>
+          <td>returns device identification string</td>
+        </tr>
+        <tr>
+          <td>LIM</td>
+          <td>returns x-axis limits in m</td>
+        </tr>
+        <tr>
+          <td>LIM/[min max]</td>
+          <td>sets x-axis limits in nm</td>
+        </tr>
+        <tr>
+          <td>ECHO/string</td>
+          <td>Emulates query command and sends a string to API, will get the same string back</td>
+        </tr>
+        <tr>
+          <td>PING</td>
+          <td>Returns PONG</td>
+        </tr>
+        <tr>
+          <td>START</td>
+          <td>sets instrument state to continues acquisition</td>
+        </tr>
+        <tr>
+          <td>STOP</td>
+          <td>sets instrument state to IDLE</td>
+        </tr>
+        <tr>
+          <td>SINGLE</td>
+          <td>starts a single scan (blocking operation, single scan takes few seconds)</td>
+        </tr>
+        <tr>
+          <td>STATE</td>
+          <td>returns instrument state</td>
+        </tr>
+        <tr>
+          <td>TRACE</td>
+          <td>returns OSA trace in json format</td>
+        </tr>
+      </tbody>
+    </table>
+    <h6>&nbsp;&nbsp;Note: The commands are case sensitive</h6>
+  </div>
+</div>
+<div style="clear:both"></div>
