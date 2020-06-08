@@ -4,7 +4,7 @@
   "description": "This project is for displaying OSA graphs",
   "main": "app.js",
   "scripts": {
-    "test": ""
+    "start": "python Server/server.py && node server.js"
   },
   "author": "Kethan Dasari",
   "license": "ISC",
